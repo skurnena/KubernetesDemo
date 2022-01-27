@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: jenkins
+  name: nodeapp
   labels:
-    app: jenkins
+    app: nodeapp
 # Creating container in Kubernetes    
 spec:
   containers:
     - name: jenkins
-      image: jenkins/jenkins:v1
+      image: kammana/nodeapp:v1
       ports:
         - containerPort: 8080
