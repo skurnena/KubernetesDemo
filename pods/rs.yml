@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: ReplicaSet
-metadata: 
+metadata:
   name: nodeapp
 spec:
   replicas: 5
@@ -16,5 +16,5 @@ spec:
       containers:
       - name: nodeapp
         image: kammana/nodeapp:v1
-        ports: 
+        ports:
         - containerPort: 8080
