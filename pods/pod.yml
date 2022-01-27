@@ -4,6 +4,7 @@ metadata:
   name: jenkins
   labels:
     app: jenkins
+    
 spec:
   containers:
     - name: jenkins
