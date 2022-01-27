@@ -4,10 +4,10 @@ metadata:
   name: jenkins
   labels:
     app: jenkins
+# Creating container in Kubernetes    
 spec:
   containers:
     - name: jenkins
       image: jenkins/jenkins:v1
       ports:
         - containerPort: 8080
-
